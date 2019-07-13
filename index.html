@@ -5,20 +5,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div id="header" class="header">
-    <a>
-      Project
-      
+    <a class="heading1">
+      Project: Etch a Sketch
     </a>
-    <button onclick="reset()">Click me</button>
+  </div>
+  <div id="header" class="header">
+      <a class="heading2">
+        Made by Shahmeer Khan
+      </a>
   </div>
 
-  <div id="containerGrid" class="containerGrid">
-    
+  <br>
+
+  <div class="bar">
+    <a class="button">
+      New Grid-Size:
+    </a>
+    <input id="sizeInput" type="text" name="sizeInput" class="input">
+    <button onclick="generate()" class="button">Generate</button>
   </div>
+
+  <br>
+
+  <div class="bar">
+    <button onclick="reset()" class="button">Reset</button>
+  </div>
+  
+  <br>
+
+  <div class="mainContainer">
+    <div id="containerGrid" class="containerGrid">
+    </div>
+  </div>
+
 
   <script src="new_script.js"></script>
 
